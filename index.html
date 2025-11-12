@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sattva Green Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#1b2a1e] text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center py-24 px-6 bg-[url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center">
+    <h1 class="text-5xl md:text-6xl font-semibold mb-4 text-lime-400">Sattva Green Hub</h1>
+    <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-200">
+      Empowering organic farmers and artisans of Kerala — connecting sustainability, culture, and commerce in one green ecosystem.
+    </p>
+    <a href="#join" class="bg-lime-500 hover:bg-lime-600 text-black rounded-2xl px-8 py-4 font-medium">Join the Movement</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 px-8 bg-[#243424] text-center">
+    <h2 class="text-4xl font-semibold text-lime-400 mb-6">About Us</h2>
+    <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+      Sattva Green Hub unites organic producers, sustainable artisans, and eco-conscious buyers.
+      We enable fair trade, digital empowerment, and a transparent platform for Kerala’s green creators.
+    </p>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="py-20 px-8 bg-[#1b2a1e] text-center">
+    <h2 class="text-4xl font-semibold text-lime-400 mb-8">Our Vision</h2>
+    <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+      To make Kerala a global model for sustainable living by empowering local farmers and artisans
+      through technology and fair trade practices.
+    </p>
+  </section>
+
+  <!-- Initiatives Section -->
+  <section class="py-20 px-8 bg-[#243424] text-center">
+    <h2 class="text-4xl font-semibold text-lime-400 mb-12">Our Initiatives</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-[#2e4030] p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-3 text-lime-400">Organic Marketplace</h3>
+        <p class="text-gray-300">Connecting organic farmers with conscious consumers worldwide.</p>
+      </div>
+      <div class="bg-[#2e4030] p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-3 text-lime-400">Artisan Collective</h3>
+        <p class="text-gray-300">Showcasing Kerala’s handmade treasures crafted sustainably.</p>
+      </div>
+      <div class="bg-[#2e4030] p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-3 text-lime-400">Green Academy</h3>
+        <p class="text-gray-300">Workshops and training on sustainable farming and eco-friendly production.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="join" class="py-20 text-center bg-lime-500 text-black">
+    <h2 class="text-4xl font-bold mb-6">Be Part of the Green Revolution</h2>
+    <p class="text-lg mb-8 max-w-2xl mx-auto">
+      Whether you’re a farmer, artisan, or eco-conscious buyer — join hands with us to create a sustainable tomorrow.
+    </p>
+    <a href="#" class="bg-black text-lime-400 hover:bg-gray-900 px-10 py-4 rounded-2xl font-medium">Get Involved</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 bg-[#1b2a1e] text-center text-gray-400 text-sm">
+    © <span id="year"></span> Sattva Green Hub. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
