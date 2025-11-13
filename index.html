@@ -1,77 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sattva Green Hub</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sattva Green Hub — Organic • Artisanal • Sustainable</title>
+  <meta name="description" content="Sattva Green Hub connects organic buyers, artisans, and sellers with a premium, sustainable marketplace and community." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="images/logo.svg">
 </head>
 
-<body class="bg-[#1b2a1e] text-white font-sans">
+<body>
+  <!-- Sticky Nav -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="brand">
+        <img src="images/logo.svg" alt="Sattva Green Hub" class="brand__logo">
+        <span class="brand__name">Sattva Green Hub</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#marketplace">Marketplace</a>
+        <a href="#artisans">Artisans</a>
+        <a href="#impact">Impact</a>
+        <a href="#investors">Investors</a>
+        <a href="#contact" class="btn btn--sm">Join</a>
+      </nav>
+      <button class="nav__menu" aria-label="Open Menu" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="flex flex-col items-center justify-center text-center py-24 px-6 bg-[url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center">
-    <h1 class="text-5xl md:text-6xl font-semibold mb-4 text-lime-400">Sattva Green Hub</h1>
-    <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-200">
-      Empowering organic farmers and artisans of Kerala — connecting sustainability, culture, and commerce in one green ecosystem.
-    </p>
-    <a href="#join" class="bg-lime-500 hover:bg-lime-600 text-black rounded-2xl px-8 py-4 font-medium">Join the Movement</a>
-  </section>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#vision">Vision</a>
+    <a href="#marketplace">Marketplace</a>
+    <a href="#artisans">Artisans</a>
+    <a href="#impact">Impact</a>
+    <a href="#investors">Investors</a>
+    <a href="#contact" class="btn btn--sm">Join</a>
+  </div>
 
-  <!-- About Section -->
-  <section class="py-20 px-8 bg-[#243424] text-center">
-    <h2 class="text-4xl font-semibold text-lime-400 mb-6">About Us</h2>
-    <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-      Sattva Green Hub unites organic producers, sustainable artisans, and eco-conscious buyers.
-      We enable fair trade, digital empowerment, and a transparent platform for Kerala’s green creators.
-    </p>
-  </section>
-
-  <!-- Vision Section -->
-  <section class="py-20 px-8 bg-[#1b2a1e] text-center">
-    <h2 class="text-4xl font-semibold text-lime-400 mb-8">Our Vision</h2>
-    <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-      To make Kerala a global model for sustainable living by empowering local farmers and artisans
-      through technology and fair trade practices.
-    </p>
-  </section>
-
-  <!-- Initiatives Section -->
-  <section class="py-20 px-8 bg-[#243424] text-center">
-    <h2 class="text-4xl font-semibold text-lime-400 mb-12">Our Initiatives</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="bg-[#2e4030] p-6 rounded-2xl shadow-lg">
-        <h3 class="text-2xl font-semibold mb-3 text-lime-400">Organic Marketplace</h3>
-        <p class="text-gray-300">Connecting organic farmers with conscious consumers worldwide.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <picture>
+      <source srcset="images/hero.jpg" />
+      <img src="images/hero.jpg" alt="Kerala greens and farms" class="hero__bg">
+    </picture>
+    <div class="container hero__content">
+      <h1 class="hero__title">
+        Where Earth Meets Excellence
+      </h1>
+      <p class="hero__subtitle">
+        A premium ecosystem uniting organic buyers, artisans, and sustainable producers — crafted in Kerala, connected to the world.
+      </p>
+      <div class="hero__cta">
+        <a href="#marketplace" class="btn">Shop Organic</a>
+        <a href="#contact" class="btn btn--ghost">Become a Partner</a>
       </div>
-      <div class="bg-[#2e4030] p-6 rounded-2xl shadow-lg">
-        <h3 class="text-2xl font-semibold mb-3 text-lime-400">Artisan Collective</h3>
-        <p class="text-gray-300">Showcasing Kerala’s handmade treasures crafted sustainably.</p>
-      </div>
-      <div class="bg-[#2e4030] p-6 rounded-2xl shadow-lg">
-        <h3 class="text-2xl font-semibold mb-3 text-lime-400">Green Academy</h3>
-        <p class="text-gray-300">Workshops and training on sustainable farming and eco-friendly production.</p>
+      <div class="hero__badges">
+        <span>Certified Organic</span>
+        <span>Fair Trade</span>
+        <span>Zero-Waste Packaging</span>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section id="join" class="py-20 text-center bg-lime-500 text-black">
-    <h2 class="text-4xl font-bold mb-6">Be Part of the Green Revolution</h2>
-    <p class="text-lg mb-8 max-w-2xl mx-auto">
-      Whether you’re a farmer, artisan, or eco-conscious buyer — join hands with us to create a sustainable tomorrow.
-    </p>
-    <a href="#" class="bg-black text-lime-400 hover:bg-gray-900 px-10 py-4 rounded-2xl font-medium">Get Involved</a>
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="section__title">About Sattva</h2>
+        <p class="muted">
+          We are a community-driven platform building dignity and fair margins for farmers and artisans. 
+          Sattva Green Hub connects verified organic producers with conscious buyers through story-rich product pages, traceability, and direct trade.
+        </p>
+        <ul class="list">
+          <li>Verified farm-to-table sourcing</li>
+          <li>Handmade crafts with cultural roots</li>
+          <li>Digital tools for small producers</li>
+        </ul>
+      </div>
+      <div class="card card--accent">
+        <h3 class="card__title">Highlights</h3>
+        <div class="stats">
+          <div class="stat"><span class="stat__num" data-count="120">0</span><span class="stat__label">Artisans</span></div>
+          <div class="stat"><span class="stat__num" data-count="75">0</span><span class="stat__label">Farms</span></div>
+          <div class="stat"><span class="stat__num" data-count="18">0</span><span class="stat__label">Districts</span></div>
+        </div>
+        <p class="tiny muted">Verified by community field partners & quality audits.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section class="section section--tint" id="vision">
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="section__title">Our Vision</h2>
+        <p class="muted">
+          Make Kerala a global reference for sustainable living and ethical commerce. 
+          We enable transparent pricing, carbon-light logistics, and cultural preservation through design and technology.
+        </p>
+      </div>
+      <div class="pillboard">
+        <div class="pill">Fair Prices</div>
+        <div class="pill">Traceability</div>
+        <div class="pill">Women-led Co-ops</div>
+        <div class="pill">Eco Logistics</div>
+        <div class="pill">Craft Heritage</div>
+        <div class="pill">Regenerative Farms</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marketplace / Products -->
+  <section class="section" id="marketplace">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Organic Marketplace</h2>
+        <a href="#contact" class="link">List Your Product →</a>
+      </div>
+
+      <div class="cards">
+        <article class="product">
+          <img src="images/product-1.jpg" alt="Cold-pressed coconut oil" loading="lazy">
+          <div class="product__body">
+            <h3>Cold-Pressed Coconut Oil</h3>
+            <p>Single-origin. Wood-pressed. Pure aroma.</p>
+            <div class="product__meta">
+              <span class="chip">500 ml</span>
+              <span class="chip">Lab-tested</span>
+            </div>
+            <div class="product__cta">
+              <a href="#contact" class="btn btn--sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/product-2.jpg" alt="Wild honey" loading="lazy">
+          <div class="product__body">
+            <h3>Forest Wild Honey</h3>
+            <p>Ethically harvested from Western Ghats.</p>
+            <div class="product__meta">
+              <span class="chip">250 g</span>
+              <span class="chip">Unheated</span>
+            </div>
+            <div class="product__cta">
+              <a href="#contact" class="btn btn--sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/product-3.jpg" alt="Organic spices" loading="lazy">
+          <div class="product__body">
+            <h3>Kerala Spice Curation</h3>
+            <p>Pepper, cardamom, clove. Bold and fresh.</p>
+            <div class="product__meta">
+              <span class="chip">Gift Set</span>
+              <span class="chip">Farmer Direct</span>
+            </div>
+            <div class="product__cta">
+              <a href="#contact" class="btn btn--sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artisan Spotlight -->
+  <section class="section section--tint" id="artisans">
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="section__title">Artisan Spotlight</h2>
+        <p class="muted">Each craft carries a story. We provide branding, packaging, and ecommerce tools so artisans can sell globally without losing authenticity.</p>
+        <ul class="list">
+          <li>Packaging & product photography</li>
+          <li>Storytelling & brand pages</li>
+          <li>Workshops and micro-grants</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="images/artisan-1.jpg" class="card__img" alt="Artisan at work" loading="lazy">
+        <div class="card__body">
+          <h3>Mural Art Collective</h3>
+          <p class="muted tiny">Cherthala, Alappuzha</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact numbers -->
+  <section class="section" id="impact">
+    <div class="container">
+      <div class="impact">
+        <div class="impact__item">
+          <h3><span data-count="92">0</span>%</h3>
+          <p>Producers reporting better margins</p>
+        </div>
+        <div class="impact__item">
+          <h3><span data-count="38">0</span>t</h3>
+          <p>Plastic avoided via zero-waste packaging</p>
+        </div>
+        <div class="impact__item">
+          <h3><span data-count="21000">0</span>+</h3>
+          <p>Community buyers engaged</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investors / Vision Deck -->
+  <section class="section section--tint" id="investors">
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="section__title">For Investors</h2>
+        <p class="muted">Asset-light marketplace with verified supply, community-led demand, and strong brand IP in Kerala’s organic and artisan economy.</p>
+        <ul class="list">
+          <li>Monetization: marketplace fees, brand collaborations, subscriptions</li>
+          <li>Moat: verified producers, traceability, cultural design</li>
+          <li>Roadmap: logistics partners, export compliance, mobile app</li>
+        </ul>
+      </div>
+      <div class="card card--accent">
+        <h3 class="card__title">Request the Vision Deck</h3>
+        <p class="muted tiny">Share your details to receive our 8-slide overview with traction, CAC/LTV, and rollout plan.</p>
+        <form class="form" id="deckForm">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Work Email" required>
+          <input type="text" name="org" placeholder="Organization (optional)">
+          <button type="submit" class="btn btn--full">Send Deck</button>
+          <p class="form__msg" id="deckMsg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture / Contact -->
+  <section class="section" id="contact">
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="section__title">Partner With Us</h2>
+        <p class="muted">Farmers, artisans, and buyers — leave your details. We will reach out with onboarding and opportunities.</p>
+        <div class="checks">
+          <span>Farmer Onboarding</span>
+          <span>Artisan Grants</span>
+          <span>Wholesale Orders</span>
+          <span>Brand Collabs</span>
+        </div>
+      </div>
+      <form class="form" id="leadForm">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone / WhatsApp">
+        <select name="role" required>
+          <option value="">I am a…</option>
+          <option value="buyer">Buyer</option>
+          <option value="farmer">Farmer</option>
+          <option value="artisan">Artisan</option>
+          <option value="partner">Logistics/Partner</option>
+          <option value="investor">Investor</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Tell us what you need…"></textarea>
+        <button type="submit" class="btn btn--full">Submit</button>
+        <p class="form__msg" id="leadMsg"></p>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-10 bg-[#1b2a1e] text-center text-gray-400 text-sm">
-    © <span id="year"></span> Sattva Green Hub. All rights reserved.
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted tiny">© <span id="year"></span> Sattva Green Hub. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#about">About</a>
+        <a href="#marketplace">Marketplace</a>
+        <a href="#investors">Investors</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <script src="assets/script.js"></script>
 </body>
 </html>
